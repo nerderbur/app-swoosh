@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,42 +19,49 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="welcomeScreenBG" translatesAutoresizingMaskIntoConstraints="NO" id="mls-U4-Tou">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcomeScreenBG" translatesAutoresizingMaskIntoConstraints="NO" id="mls-U4-Tou">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="XLf-cX-fVx">
-                                <rect key="frame" x="107" y="27" width="161" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="XLf-cX-fVx">
+                                <rect key="frame" x="100.5" y="40" width="119" height="20"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GO ALL IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2FQ-NF-ftO">
-                                <rect key="frame" x="63" y="163" width="249" height="88"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO ALL IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2FQ-NF-ftO">
+                                <rect key="frame" x="19" y="169" width="282" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="282" id="skP-aB-KwF"/>
+                                    <constraint firstAttribute="height" constant="66" id="tUZ-Ra-Qa2"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="48"/>
                                 <color key="textColor" red="0.9951923077" green="0.9903846154" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ON GOING ALL OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BC1-yH-f1S">
-                                <rect key="frame" x="57" y="234" width="260" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON GOING ALL OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BC1-yH-f1S">
+                                <rect key="frame" x="47.5" y="235" width="225" height="32"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="23"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Find a team in your city &amp; dominate the league" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wx-Gh-WWV">
-                                <rect key="frame" x="48" y="305" width="278" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a team in your city &amp; dominate the league" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wx-Gh-WWV">
+                                <rect key="frame" x="-15" y="297" width="350" height="60.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="2wM-Hp-ODN"/>
+                                    <constraint firstAttribute="height" constant="60.5" id="zI6-lR-Cuh"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="7yX-MO-MDh"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyO-Mu-NE0" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
-                                <rect key="frame" x="22" y="571" width="328" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyO-Mu-NE0" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                                <rect key="frame" x="16" y="393" width="288" height="57"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40328017979452052" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="Xeg-Oi-czW"/>
+                                    <constraint firstAttribute="height" constant="57" id="ggI-Kt-eF9"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
                                 <state key="normal" title="GET STARTED">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -62,12 +69,37 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BC1-yH-f1S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Wl-bU-zO2"/>
+                            <constraint firstItem="0wx-Gh-WWV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6bG-va-doJ"/>
+                            <constraint firstItem="XLf-cX-fVx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BJA-oK-fXT"/>
+                            <constraint firstItem="mls-U4-Tou" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FRo-RR-gyq"/>
+                            <constraint firstItem="XLf-cX-fVx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Icu-Ar-XGT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jyO-Mu-NE0" secondAttribute="bottom" constant="30" id="JEJ-Jw-vbm"/>
+                            <constraint firstItem="2FQ-NF-ftO" firstAttribute="top" secondItem="XLf-cX-fVx" secondAttribute="bottom" constant="109" id="Ust-3z-DIu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jyO-Mu-NE0" secondAttribute="bottom" constant="30" id="WAE-0O-gvs"/>
+                            <constraint firstItem="0wx-Gh-WWV" firstAttribute="top" secondItem="BC1-yH-f1S" secondAttribute="bottom" constant="30" id="WbX-9t-MjD"/>
+                            <constraint firstItem="2FQ-NF-ftO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YED-au-5i5"/>
+                            <constraint firstItem="mls-U4-Tou" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="d3O-dw-ANe"/>
+                            <constraint firstItem="XLf-cX-fVx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="ewo-k8-fKy"/>
+                            <constraint firstItem="BC1-yH-f1S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gIH-lt-ALf"/>
+                            <constraint firstItem="jyO-Mu-NE0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hG9-jk-Z9e"/>
+                            <constraint firstItem="XLf-cX-fVx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="nvx-Df-Mp7"/>
+                            <constraint firstItem="mls-U4-Tou" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oCO-Nn-ihW"/>
+                            <constraint firstItem="0wx-Gh-WWV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tuL-gB-Ama"/>
+                            <constraint firstItem="mls-U4-Tou" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="wpr-pJ-vi7"/>
+                            <constraint firstItem="BC1-yH-f1S" firstAttribute="top" secondItem="2FQ-NF-ftO" secondAttribute="bottom" id="y81-gl-hsF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bgImg" destination="mls-U4-Tou" id="GeS-O2-Bk6"/>
+                        <outlet property="swoosh" destination="XLf-cX-fVx" id="lt3-5w-o9e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="170.46476761619192"/>
+            <point key="canvasLocation" x="135" y="168.75"/>
         </scene>
     </scenes>
     <resources>
